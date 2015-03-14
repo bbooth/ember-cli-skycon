@@ -1,3 +1,20 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h2 id="title">Skycons Demo</h2>
 
-{{outlet}}
+{{sky-icon height=height width=width icon=icon color=color}}
+
+<form>
+    <label for="icon">Icon</label>
+  {{view "select" id="icon"
+  content=iconList
+  selection=icon
+  }}
+
+    <label for="color">Color</label>
+  {{input value=color id="color"}}
+
+    <label for="height">Height</label>
+  {{input value=height id="height"}}
+
+    <label for="width">Width</label>
+  {{input value=width id="width"}}
+</form>

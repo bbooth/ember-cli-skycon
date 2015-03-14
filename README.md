@@ -1,25 +1,17 @@
-# Ember-cli-skycon
+# ember-cli-skycon
 
-This README outlines the details of collaborating on this Ember addon.
+This addon allows the use of of the skycon library for weather icons
 
-## Installation
+## Usage
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install:addon ember-cli-skycon`
 
-## Running
+Then inside a template you can use the component
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+`{{sky-icon height="100px" width="100px" icon="clear-day" color="blue"}}`
 
-## Running Tests
+The components properties can be bound as well
 
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
+`{{sky-icon height=my-height width=my-width icon=my-icon color=my-color}}`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
